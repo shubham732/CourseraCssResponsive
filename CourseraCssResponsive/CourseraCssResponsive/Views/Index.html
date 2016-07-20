@@ -46,10 +46,10 @@
             </nav>
     <div class="container-fluid">
         <div class="row scroll">
-            <div id="wrapper">
+            <div id="wrapper" >
                 <!-- Sidebar -->
                 <!-- Sidebar -->
-                <div id="sidebar-wrapper" class="col-lg-4 col-md-3 col-sm-2">
+                <div id="sidebar-wrapper" class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
                     <ul id="sidebar_menu" class="sidebar-nav">
                         <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
                     </ul>
@@ -61,7 +61,7 @@
                 </div>
 
                 <!-- Page content -->
-                <div id="page-content-wrapper" class="col-lg-8 col-md-9 col-sm-10 main" style=" padding-left: 60px">
+                <div id="page-content-wrapper" class="col-lg-8 col-md-9 col-sm-10 col-xs-11 main" style=" padding-left: 60px">
                     <!-- Keep all page content within the page-content inset div! -->
                     <div class="page-content inset">
 
@@ -230,6 +230,18 @@
         $("#menu-toggle").click(function (e) {
             e.preventDefault();
             $("#wrapper").toggleClass("active");
+        });
+        $(window).resize(function () {
+            if($("#page-content-wrapper").width()<=570)
+            {
+                if ($("#wrapper").hasClass("active")) {
+                    $("#wrapper").removeClass("active");
+                }
+               
+            }
+            else if ($("#page-content-wrapper").width() > 600) {
+                $("#wrapper").addClass("active");
+            }
         });
     </script>
    
