@@ -1,12 +1,8 @@
-﻿myapp.controller("myctrl", function ($scope, AppService) {
-    $scope.hasactiveclass = true;
-    $scope.ApplyClass = function () {
-
-        $scope.hasactiveclass = !$scope.hasactiveclass;
-    }
+﻿myapp.controller("myctrl", function ($scope) {
+   
     getData();
     function getData() {
-        //AppService.ShowLoader();
+        //
         $.ajax
            ({
                type: "POST",

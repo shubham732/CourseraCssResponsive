@@ -15,10 +15,12 @@
     left: 70px;
     width: 150px;
     background: rgba(44, 62, 80, 0.21);
-    position: absolute;
+    position: fixed;
     height: 100%;
     z-index: 10000;
     transition: all .4s ease 0s;
+    top: 60px;
+
 }
 
 .sidebar-nav {

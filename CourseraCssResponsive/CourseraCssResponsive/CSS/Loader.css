@@ -1,4 +1,14 @@
-﻿.cssload-loader * {
+﻿.LoaderText
+{
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    padding-top: 494px;
+    padding-left: 59px;
+    font-size: 30px;
+
+}
+.cssload-loader * {
 	box-sizing: border-box;
 		-o-box-sizing: border-box;
 		-ms-box-sizing: border-box;

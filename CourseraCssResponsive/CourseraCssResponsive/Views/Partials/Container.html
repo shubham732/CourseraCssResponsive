@@ -1,54 +1,7 @@
 ﻿<div>
-  
-    <nav class="navbar navbar-default" style="margin-bottom:0px">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Project Name</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Dashboard <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Setting</a></li>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Help</a></li>
-
-
-                </ul>
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-
-                </form>
-
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div class="row scroll">
-            <div id="wrapper" ng-class=" {false:'', true:'active'}[hasactiveclass==true]">
-                <!-- Sidebar -->
-                <!-- Sidebar -->
-                <div id="sidebar-wrapper" class="col-lg-4 col-md-3 col-sm-2 col-xs-1" >
-                    <ul id="sidebar_menu" class="sidebar-nav" >
-                        <li class="sidebar-brand" ><a id="menu-toggle" class="mousepointer"  ng-click="ApplyClass()">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify "></span></a></li>
-                    </ul>
-                    <ul class="sidebar-nav" id="sidebar">
-                        <li><a>Link1</a></li>
-                        <li><a>link2</a></li>
-                    </ul>
-
-                </div>
-               
+    
                 <!-- Page content -->
-                <div id="page-content-wrapper" class="col-lg-8 col-md-9 col-sm-10 col-xs-11 main" style=" padding-left: 60px">
+                <div id="page-content-wrapper" class="col-lg-8 col-md-9 col-sm-10 col-xs-11 main" style="padding-left: 210px; top: 35px; " >
                     <!-- Keep all page content within the page-content inset div! -->
                     <div class="page-content inset">
 
@@ -77,7 +30,7 @@
                                 </div>
                             </div>
                             <h2>Section title</h2>
-                            <div class="table-responsive">
+                            <div class="table-responsive" >
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
@@ -89,15 +42,15 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr ng-repeat="data in content">
+                                        <tr ng-repeat="data in content" ng-show="showcontent">
                                             <td>{{data.CustomerName}}</td>
                                             <td>{{data.ContactName}}</td>
                                             <td>{{data.Address}}</td>
                                             <td>{{data.City}}</td>
                                             <td>{{data.postalCode}}</td>
-                                          
+
                                         </tr>
-                                        
+
                                     </tbody>
                                 </table>
                             </div>
@@ -106,9 +59,7 @@
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </div>
+      
 
 
 </div>
