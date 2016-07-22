@@ -70,6 +70,7 @@
     <Content Include="Controller\NavigationCtrl.js" />
     <Content Include="CSS\Loader.css" />
     <Content Include="Services\AppService.js" />
+    <Content Include="Views\Partials\Setting.html" />
     <Content Include="Views\Partials\webService.asmx" />
     <Content Include="Controller\App.js" />
     <Content Include="ASSET\Scripts\angular-animate.js" />

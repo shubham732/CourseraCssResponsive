@@ -1,65 +1,81 @@
-﻿<div>
+﻿
     
-                <!-- Page content -->
-                <div id="page-content-wrapper" class="col-lg-8 col-md-9 col-sm-10 col-xs-11 main" style="padding-left: 210px; top: 35px; " >
-                    <!-- Keep all page content within the page-content inset div! -->
-                    <div class="page-content inset">
+               
+    <div id="wrapper" ng-class=" {false:'', true:'active'}[hasactiveclass==true]" >
+        <!-- Sidebar -->
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="col-lg-4 col-md-3 col-sm-2 col-xs-1">
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand"><a id="menu-toggle" class="mousepointer" ng-click="ApplyClass()">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify "></span></a></li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">
+                <li><a>Link1</a></li>
+                <li><a>link2</a></li>
+            </ul>
 
-                        <div>
-                            <h1 class="page-header">Dashboard</h1>
-                            <div class="row placeholders">
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-ls-3 placeholder">
-                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
-                                    <h4>Label</h4>
-                                    <span class="text-muted">Something else</span>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-ls-3 placeholder">
-                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
-                                    <h4>Label</h4>
-                                    <span class="text-muted">Something else</span>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-ls-3 placeholder">
-                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
-                                    <h4>Label</h4>
-                                    <span class="text-muted">Something else</span>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-3 col-ls-3 placeholder">
-                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
-                                    <h4>Label</h4>
-                                    <span class="text-muted">Something else</span>
-                                </div>
-                            </div>
-                            <h2>Section title</h2>
-                            <div class="table-responsive" >
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Header</th>
-                                            <th>Header</th>
-                                            <th>Header</th>
-                                            <th>Header</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr ng-repeat="data in content" ng-show="showcontent">
-                                            <td>{{data.CustomerName}}</td>
-                                            <td>{{data.ContactName}}</td>
-                                            <td>{{data.Address}}</td>
-                                            <td>{{data.City}}</td>
-                                            <td>{{data.postalCode}}</td>
+        </div>
+        <!-- Page content -->
+        <div id="page-content-wrapper" class="col-lg-8 col-md-9 col-sm-10 col-xs-11 main" style="padding-left: 52px; top: 35px; " >
+            <!-- Keep all page content within the page-content inset div! -->
+            <div class="page-content inset">
 
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
+                <div>
+                    <h1 class="page-header">Dashboard</h1>
+                    <div class="row placeholders">
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-ls-3 placeholder">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
+                            <h4>Label</h4>
+                            <span class="text-muted">Something else</span>
                         </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-ls-3 placeholder">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
+                            <h4>Label</h4>
+                            <span class="text-muted">Something else</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-ls-3 placeholder">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
+                            <h4>Label</h4>
+                            <span class="text-muted">Something else</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-ls-3 placeholder">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
+                            <h4>Label</h4>
+                            <span class="text-muted">Something else</span>
+                        </div>
+                    </div>
+                    <h2>Section title</h2>
+                    <div class="table">
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="data in content" ng-show="showcontent">
+                                    <td>{{data.CustomerName}}</td>
+                                    <td>{{data.ContactName}}</td>
+                                    <td>{{data.Address}}</td>
+                                    <td>{{data.City}}</td>
+                                    <td>{{data.postalCode}}</td>
 
+                                </tr>
+
+                            </tbody>
+                        </table>
                     </div>
                 </div>
+
+            </div>
+        </div>
+
+    </div>
+   
 
       
 
 
-</div>
